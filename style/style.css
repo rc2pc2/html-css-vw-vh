@@ -12,8 +12,8 @@ body{
 
 header{
     background-color: #cccccc;
-    /* height: 60px; */
-    padding: 1rem 0;
+    height: 60px;
+    /* padding: 1rem 0; */
     margin-bottom: 1.5rem;
 
     /* position: relative; */
@@ -43,6 +43,11 @@ header nav ul{
 header nav ul li{
     position: relative;
     margin-right: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 3px solid transparent;
 }
 
 header nav ul img{
@@ -70,12 +75,15 @@ div.box-w{
     border: 5px solid cyan;
 } */
 
-header nav li:hover div.decorator{
+/* header nav li:hover div.decorator{
     /* content: ""; */
     /* display: block; */
-    position: absolute;
+    /* position: absolute;
     top: 173%;
     height: 3px;
     width: 38px;
-    background-color: rgb(81, 255, 81);
+    background-color: rgb(81, 255, 81); }*/
+
+header nav li:hover {
+    border-bottom: 3px solid lime;
 }
